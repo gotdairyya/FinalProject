@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>"Schools & Art"</title>
+    <meta charset="utf-8" />
+    <!-- full screen Leaflet map -->
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <!-- Including Leaflet CSS -->
+    <link type="text/css" rel="stylesheet" href="libraries/leaflet-0.7.3/leaflet.css"/>
+    <!-- Custom CSS -->
+    <link type="text/css" rel="stylesheet" href="css/style.css"/>
+  </head>
+  <body>
+<!-- <h2>Our first Leaflet.js map</h2> -->
+  	<div id="map"></div>
+  </body>
+  <!-- Including Leaflet Javascript Library -->
+  <script type="text/javascript" src="libraries/leaflet-0.7.3/leaflet.js"></script>
+  <script type="text/javascript" src="libraries/Leaflet.MakiMarkers.js"></script>
+
+<!-- Adding the GeoJSON Data -->
+
+<!--line data-->
+  <script type="text/javascript" src="data/MTA_subway_lines.geojson"></script>
+<!--polygon-->
+  <script type="text/javascript" src="data/NYC_neighborhood_data.geojson"></script>
+<!--point data-->
+  <!--<script type="text/javascript" src="data/free_wifi.geojson"></script>-->
+  <script type="text/javascript" src="data/schools.geojson"></script>
+  <script type="text/javascript" src="data/museum.geojson"></script>
+
+  <!-- Including our custom Javascript -->  
+  <script type="text/javascript" src="js/script.js"></script>
+</html>
