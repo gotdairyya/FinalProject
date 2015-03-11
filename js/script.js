@@ -103,7 +103,7 @@ var schoolsToLayer = function (feature, latlng){
 var schoolsClick = function (feature, layer) {
     // let's bind some feature properties to a pop up
 
-    layer.bindPopup("<strong>Name:</strong> " + feature.properties.SCHOOLNAME + "<br /><strong>Address: </strong>" + feature.properties.ADRESS + "<br /><strong>School Type: </strong>" + feature.properties.SCH_TYPE);
+    layer.bindPopup("<strong>Name:</strong> " + feature.properties.SCHOOLNAME + "<br /><strong>Address: </strong>" + feature.properties.ADDRESS + "<br /><strong>School Type: </strong>" + feature.properties.SCH_TYPE);
 }
 
 var schoolsGeoJSON = L.geoJson(schools, {
